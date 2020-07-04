@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Aashish-Dahal/BlogApp/issues"
   },
-  "homepage": "https://github.com/Aashish-Dahal/BlogApp#readme"
+  "homepage": "https://github.com/Aashish-Dahal/BlogApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21",
+    "nodemon": "^2.0.4"
+  }
 }
