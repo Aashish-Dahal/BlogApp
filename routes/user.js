@@ -1,10 +1,10 @@
 const express=require('express');
 const  User=require('../models/users.model');
 const router=express.Router();
-
+const middleware=require('../middleware')
 const jwt=require('jsonwebtoken');
 
-router.get('/:username',(middleware,req,res)=>{
+router.get('/:username',middleware,(req,res)=>{
     User.findOne({username:req.params.username},(err,data)=>{
         if(err) return res.status(500).json({msg:err})
         const msg={
